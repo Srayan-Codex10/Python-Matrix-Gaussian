@@ -1,11 +1,13 @@
 import numpy as np
 
 class Gaussian:
-    def __init__(self, input_matrix):
-        self.matrix = input_matrix
+    __matrix = np.ndarray([], dtype=float)
+    def __init__(self, input_matrix: np.ndarray):
+        self.__matrix = input_matrix
+
+    def convert_to_echelon(self):
+        pass
 
 
 class IsSingular(Exception):
-    raise "Matrix is Singular"
-
-
+    pass
